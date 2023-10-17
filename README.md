@@ -23,10 +23,7 @@ custom_drop_down: 1.0.0
 ## Preview
 <img src="https://github.com/redevrx/custom_drop_down/blob/main/assets/Screenshot_1697537283.png?raw=true" alt="preview" width="350"/>
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## Usage & Example
 
 ```dart
 class MyApp extends StatelessWidget {
