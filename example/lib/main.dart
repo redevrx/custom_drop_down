@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_drop_down/flutter_custom_drop_down.dart';
+import 'package:flutter_custom_drop_down_widget/flutter_custom_drop_down_widget.dart';
 
 void main() => runApp(const MyApp());
 

@@ -17,7 +17,7 @@ and the Flutter guide for
 ## Getting started
 
 ```
-custom_drop_down: 1.0.0
+flutter_custom_drop_down_widget: 1.0.0
 ```
 
 ## Preview
