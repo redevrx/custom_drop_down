@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        CupertinoCheckbox(value: false, onChanged: (it)=>null),
+                        CupertinoCheckbox(value: false, onChanged: (it){}),
                         const Text("Open"),
                       ],
                     ),
@@ -133,7 +133,7 @@ class MyApp extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        CupertinoCheckbox(value: false, onChanged: (it)=>null),
+                        CupertinoCheckbox(value: false, onChanged: (it){}),
                         const Text("Open"),
                       ],
                     ),
@@ -149,11 +149,14 @@ class MyApp extends StatelessWidget {
                       child: ListView.builder(
                         itemCount: 10,
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              CupertinoCheckbox(value: true, onChanged: (it){}),
-                              const Text("Item Name")
-                            ],
+                          return GestureDetector(
+                            onTap: controller2.toggle,
+                            child: Row(
+                              children: [
+                                CupertinoCheckbox(value: true, onChanged: (it){}),
+                                const Text("Item Name")
+                              ],
+                            ),
                           );
                         },
                       ),
