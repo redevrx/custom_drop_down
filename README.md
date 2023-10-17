@@ -21,8 +21,7 @@ custom_drop_down: 1.0.0
 ```
 
 ## Preview
-
-![](https://github.com/redevrx/custom_drop_down/blob/main/assets/Screenshot_1697537283.png?raw=true)
+<img src="https://github.com/redevrx/custom_drop_down/blob/main/assets/Screenshot_1697537283.png?raw=true" alt="preview" width="350"/>
 
 ## Usage
 
