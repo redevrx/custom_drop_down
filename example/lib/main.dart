@@ -22,9 +22,15 @@ class MyApp extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                const SizedBox(height: kToolbarHeight,),
+                const SizedBox(
+                  height: kToolbarHeight,
+                ),
+
                 /// dropdown button
-                Text('dropdown button',style: Theme.of(context).textTheme.titleLarge,),
+                Text(
+                  'dropdown button',
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
                 CustomDropDown(
                   getController: (controller) {
                     controller2 = controller;
@@ -32,20 +38,19 @@ class MyApp extends StatelessWidget {
                   child: Container(
                     width: MediaQuery.of(context).size.width * .8,
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0,),
+                      horizontal: 16.0,
+                    ),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(16.0),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.23),
-                          blurRadius: .4
-                        )
-                      ]
-                    ),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black.withOpacity(.23),
+                              blurRadius: .4)
+                        ]),
                     child: Row(
                       children: [
-                        CupertinoCheckbox(value: false, onChanged: (it){}),
+                        CupertinoCheckbox(value: false, onChanged: (it) {}),
                         const Text("Open"),
                       ],
                     ),
@@ -62,7 +67,8 @@ class MyApp extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return Row(
                             children: [
-                              CupertinoCheckbox(value: true, onChanged: (it){}),
+                              CupertinoCheckbox(
+                                  value: true, onChanged: (it) {}),
                               const Text("Item Name")
                             ],
                           );
@@ -72,9 +78,15 @@ class MyApp extends StatelessWidget {
                   },
                 ),
 
-                const SizedBox(height: kToolbarHeight,),
+                const SizedBox(
+                  height: kToolbarHeight,
+                ),
+
                 /// dropdown button
-                Text('dropdown button',style: Theme.of(context).textTheme.titleLarge,),
+                Text(
+                  'dropdown button',
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
                 CustomDropDown(
                   getController: (controller) {
                     controller1 = controller;
@@ -109,8 +121,13 @@ class MyApp extends StatelessWidget {
                   },
                 ),
 
-                const SizedBox(height: kToolbarHeight * 2.8,),
-                Text('dropdown button',style: Theme.of(context).textTheme.titleLarge,),
+                const SizedBox(
+                  height: kToolbarHeight * 2.8,
+                ),
+                Text(
+                  'dropdown button',
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
                 CustomDropDown(
                   targetAnchor: Alignment.bottomLeft,
                   alignment: Alignment.topCenter,
@@ -120,20 +137,19 @@ class MyApp extends StatelessWidget {
                   child: Container(
                     width: MediaQuery.of(context).size.width * .8,
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16.0,),
+                      horizontal: 16.0,
+                    ),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(16.0),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.black.withOpacity(.23),
-                              blurRadius: .4
-                          )
-                        ]
-                    ),
+                              blurRadius: .4)
+                        ]),
                     child: Row(
                       children: [
-                        CupertinoCheckbox(value: false, onChanged: (it){}),
+                        CupertinoCheckbox(value: false, onChanged: (it) {}),
                         const Text("Open"),
                       ],
                     ),
@@ -153,7 +169,8 @@ class MyApp extends StatelessWidget {
                             onTap: controller2.toggle,
                             child: Row(
                               children: [
-                                CupertinoCheckbox(value: true, onChanged: (it){}),
+                                CupertinoCheckbox(
+                                    value: true, onChanged: (it) {}),
                                 const Text("Item Name")
                               ],
                             ),
